@@ -5,7 +5,7 @@
  
  > **PayApp.Main.Console.exe** *[rates_file_path]* *[paypackets_file_path]*
  
- > Example : PayApp.Main.Console.exe Data\rates.csv Data\testdata.csv
+ > **Example :** PayApp.Main.Console.exe Data\rates.csv Data\testdata.csv
  
  > **NOTE :** I have provided both rates.csv and testdata.csv in the Data Folder 
 		  within the PayApp.Main.Console
