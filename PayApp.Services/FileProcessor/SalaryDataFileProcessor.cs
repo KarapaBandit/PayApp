@@ -71,7 +71,7 @@ namespace PayApp.Services.FileProcessor
                     // Move this error container or logger
                     StringBuilder sb = new StringBuilder();
                     sb.AppendLine(" "+ex.Message +" ::: line-number "+ i );
-                    sb.AppendLine( " ===> " + line);
+                    sb.AppendLine( " ==> " + line);
                     _failedProcessedLines.Add(sb.ToString());
                 }
 
@@ -138,24 +138,29 @@ namespace PayApp.Services.FileProcessor
         }
 
         #region PrintHelpers
-
+            /// <summary>
+            /// Print header for console output
+            /// </summary>
             private void PrintHeader()
             {
                 StringBuilder sb = new StringBuilder();
-                sb.AppendLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                sb.AppendLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
                 sb.AppendLine(" Output(name,pay period,gross income,income tax,net income,super): ");
-                sb.AppendLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                sb.AppendLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
                 _outputWriter.WriteLine(sb.ToString());
 
             }
 
+            /// <summary>
+            /// Print Failure header for console output
+            /// </summary>
             private void PrintHeaderFailure()
             {
                 StringBuilder sb = new StringBuilder();
                 sb.AppendLine();
-                sb.AppendLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                sb.AppendLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
                 sb.AppendLine(" Failed Processed Payslips ");
-                sb.AppendLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                sb.AppendLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
                 _outputWriter.WriteLine(sb.ToString());
             }
 
