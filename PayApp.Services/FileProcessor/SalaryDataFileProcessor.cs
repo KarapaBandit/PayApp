@@ -144,6 +144,7 @@ namespace PayApp.Services.FileProcessor
             private void PrintHeader()
             {
                 StringBuilder sb = new StringBuilder();
+                sb.AppendLine();
                 sb.AppendLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
                 sb.AppendLine(" Output(name,pay period,gross income,income tax,net income,super): ");
                 sb.AppendLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
