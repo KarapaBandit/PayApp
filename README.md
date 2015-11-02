@@ -70,8 +70,8 @@
 	7. Given customers don't have unique identifiers any duplicate entries will treated as unique 
 	   customers and processed independently
 	
-	8. Based on point 3 and 4, we have factored out properties such as id's and navigation properties
-	   within our domain models 
+	8. Based on point 3 and 4, we have factored out properties such as id's and navigation 
+	   properties within our domain models 
 	
 	9. Each Customer has one Pay Period(Monthly)
 		- Realistically a customer can have more than one Pay Period and should be represented by
